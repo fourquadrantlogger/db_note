@@ -1,0 +1,1 @@
+insert into pay.commodity( cid,ctype,cname,price,days ) value(62,3,'298元/永久',29800,10000)
