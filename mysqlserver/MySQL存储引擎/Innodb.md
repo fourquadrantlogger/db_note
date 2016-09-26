@@ -1,0 +1,11 @@
+# Innodb
+
++ 事务控制等特性
+
+对事务安全的支持
+
+READ UNCOMMITTED，READ COMMITTED，REPEATABLE READ 和 SERIALIZABLE
+
++ 锁定机制
+
+实现了行锁

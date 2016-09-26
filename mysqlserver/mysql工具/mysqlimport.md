@@ -1,0 +1,1 @@
+是一个将以特定格式存放的文本数据（如通过“select * into OUTFILE from ...”所生成的数据文件）导入到指定的 MySQL Server 中的工具程序，比如将一个标准的 csv 文件导入到某指定数据库的指定表中。mysqlimport 工具实际上也只是“load data infile”命令的一个包装实现
