@@ -1,5 +1,7 @@
 
-+ UPDATE
+## UPDATE
+
++ db.Model(&Struct{}).Where.Updates(columns)
 ```
 res = db.Model(&Account{}).
 			Where("uid = ?", w.UID).
