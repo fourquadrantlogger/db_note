@@ -17,3 +17,19 @@ res = db.Model(&Account{}).
 			return errors.ErrUpdateError
 		}
 ```
+
+## SELECT
+
++
+```
+func All(uid uint) ([]*Cart, error) {
+	ret := []*Cart{}
+	err := database.WithDefault(func(db *gorm.DB) error {
+		return db.Where("uid = ?", uid).Find(&ret).Error
+	})
+	if err != nil {
+		return nil, err
+	}
+	return ret, nil
+}
+```
