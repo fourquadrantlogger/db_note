@@ -20,6 +20,24 @@ res = db.Model(&Account{}).
 
 ## SELECT
 
++ first
+```
+func GetProductById(id uint) (*Product, error) {
+	p := &Product{}
+	err := database.WithDefault(func(db *gorm.DB) error {
+		res := db.Where("delete_at = 0").First(p, id)
+		if res.RecordNotFound() {
+			return errors.ErrProductNotExists
+		}
+		return res.Error
+	})
+	if err != nil {
+		return nil, err
+	}
+	return p.Fix(), nil
+}
+```
+
 +
 ```
 func All(uid uint) ([]*Cart, error) {
