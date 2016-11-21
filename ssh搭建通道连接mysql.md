@@ -13,3 +13,5 @@ Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
 permitted by applicable law.
 lipeng@VM-8-195-debian:~$
 ```
+
+ssh -N -C xpai-prod-tunnel -L 9999:10.0.1.2:3306
