@@ -35,3 +35,7 @@ c3a378a3-ec7a-11e6-98e7-7cd30abeb32c:1-5475272
 Finished dump at: 2017-02-09 13:07:19
 ```
 导出 29亿 数据，耗时43分钟。
+
+```
+SELECT /*!40001 SQL_NO_CACHE */ * FROM `crawler_meipai`.`userrelation`
+```
