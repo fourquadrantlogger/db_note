@@ -8,3 +8,7 @@ sudo swapon /mnt/512MiB.swap
 # 拉镜像
 
 pull jaspeen/oracle-11g
+
+# 登录
+
+system/oracle
